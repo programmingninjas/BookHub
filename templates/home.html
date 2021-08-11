@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div class='container'>
+    <div class="text-center">
+        <img src="/static/bookhub.png" class="img-fluid" alt="logo">
+        <br/>
+        <br/>
+        <h1 style="color: aliceblue;">Download eBooks</h1>
+        <br/>
+      
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+        <h6 style="color: aliceblue; text-align: left;">Type Book Name or Paste Book Link:</h6>
+        {{ form.book_link(class="form-control") }}
+        <br/>
+        {{ form.submit(class="btn btn-outline-warning") }}
+
+    </form>
+    </div>
+</div>
+
+{% endblock %}
