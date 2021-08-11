@@ -1,4 +1,4 @@
-# BookHub ![logo] https://github.com/programmingninjas/BookHub/blob/main/static/bookhub.png
+# BookHub ![logo](https://github.com/programmingninjas/BookHub/blob/main/static/bookhub.png)
 BookHub is the one stop destination for you to download eBooks. Made with flask and love
 
 Currently this projects supports Amazon and Flipkart links but their accuracy is 80%.
