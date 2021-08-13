@@ -7,4 +7,4 @@ Currently this project supports Amazon and Flipkart links but their accuracy is 
 
 Since this project uses web scrapping if you get NoneType error this usually indicates that class of tags from which it is extracting book title has been changed. 
 
-⚠️ Don't forget to pip install all the libraries required and also libgen_api ⚠️
+⚠️ Don't forget to pip install all the libraries required and also libgen_api
