@@ -1,0 +1,3 @@
+Flask-WTF
+beautifulsoup4
+libgen_api
