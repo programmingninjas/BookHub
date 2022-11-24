@@ -3,7 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 
 def download(URL):
-
+    
+    # Scraping Amazon for Book Name
+    
     if 'amazon.in' in URL:
 
         raw = requests.get(URL,headers={'User-agent': 'Chrome'})
@@ -13,7 +15,8 @@ def download(URL):
         raw_title = data.find('span', class_='a-size-extra-large').text
 
         title = raw_title.lstrip('\n').rstrip('\n').replace('()', '')
-
+        
+    # Scraping Flipkart for Book Name
     elif 'flipkart.com' in URL:
 
         raw = requests.get(URL,headers={'User-agent': 'Chrome'})
