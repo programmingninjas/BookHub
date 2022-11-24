@@ -7,8 +7,9 @@ from downloader import download
 from urllib.parse import urlparse
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "@programmingninjas"
+app.config['SECRET_KEY'] = "YOUR_KEY"     # Use your secret key
 
+# Form for getting book link or name
 class book_form(FlaskForm):
     
     book_link = StringField("book link", validators=[DataRequired()])
@@ -16,6 +17,7 @@ class book_form(FlaskForm):
 
 book_link = None
 
+# Home Route
 @app.route('/',methods=['GET','POST'])
 def song():
 
@@ -27,7 +29,7 @@ def song():
 
         try:
             
-            download_link = download(book_link)
+            download_link = download(book_link)          # Function imported from downloader.py
 
             return redirect(download_link)
 
