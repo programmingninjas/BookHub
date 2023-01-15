@@ -1,4 +1,5 @@
-flask
+flask==1.1.2
 Flask-WTF
 beautifulsoup4
 libgen_api
+Werkzeug==2.0.0
